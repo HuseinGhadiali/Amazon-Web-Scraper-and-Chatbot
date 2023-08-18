@@ -11,7 +11,7 @@ def generate_response(openai_api_key, query_text):
     # Load conversation context
     context = memory.load_memory_variables({})
     # Load document from file
-    with open('amazonmultiple.csv', 'r', encoding='UTF-8') as f:
+    with open('your_filename.csv', 'r', encoding='UTF-8') as f:
         documents = [f.read()]
     # Split documents into chunks
     text_splitter = CharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
